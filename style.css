@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Poppins:wght@300;600&display=swap');
+
+*{box-sizing: border-box;margin-top:0;}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-size: 1.1rem;;
+}
+nav{
+   overflow:hidden;
+   background-color: #333;
+   position: fixed;
+   top:0;
+   width: 100%;
+}
+nav a{
+    float: left;
+    color: #fff;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav a:hover{
+ background-color: black;
+ color:white;
+}
+nav a.active {
+    background-color: black;
+    color: white;
+  }
+  
+h1{
+    font-size: 5rem;
+    color: #FCFFE7;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    outline: 3px solid white;
+    outline-offset: .25rem;
+    display: inline-block;
+    margin: 0.25em 0 0.5em;
+
+    
+}
+h2{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+}
+
+p span{
+    color: #FCFFE7;
+    font-size: 2rem;
+}
+
+.btn{
+    display: inline-block;
+    padding: .7em 1.7em;
+    background:red;
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius:10px;
+}
+.btn:hover{
+   background-color: #DDDDDD;
+}
+
+.mathiko{
+    background-color: #444;
+    background-image: url('https://source.unsplash.com/nqGmeK7Ekqk');
+    background-blend-mode: multiply;
+    background-size: cover;
+    height: 100vh;
+    padding: 1em;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.banako-projects{
+    padding: 12vh 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+@media(min-width:40rem){
+    .banako-projects{
+      flex-direction: row;
+    }
+}
+.banako-project {
+    flex-basis: 30%;
+}
+
+.jodinu {
+ background-image:url('https://source.unsplash.com/4dj8Rz_eId0');
+ background-size: cover;
+ padding: 25vh 0;
+ color: white;
+ display: flex;
+ justify-content: flex-end;
+ height: 75vh;
+}
+
+.jodinu-text {
+    flex-basis: 100%;
+    padding: 0 2em;
+    @media(min-width: 50rem){
+        flex-basis:50%;
+    }
+}
